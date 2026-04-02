@@ -76,8 +76,7 @@ The screenshot includes:
 ## 🔗 GitHub Repository
 
 Link to this project:  
-**https://github.com/your-username/final-project**  
-*(Replace with your actual repo URL before submitting.)*
+https://github.com/AartiSaini2002/final-project
 
 ---
 
