@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function MainContent() {
   return (
     <main>
@@ -5,7 +7,7 @@ function MainContent() {
         <div className="overlay">
           <h2>The Art of Bridal Perfection</h2>
           <p>Dresses That Turn Moments into Memories — Elegant, Affordable, Yours</p>
-          <a href="#collection" className="btn-cta">Find Your Dream Outfit</a>
+          <Link to="/catalog" className="btn-cta">Find Your Dream Outfit</Link>
         </div>
       </section>
 
@@ -25,7 +27,7 @@ function MainContent() {
             <div className="card-content">
               <h3>Gowns</h3>
               <p>Elegant & Classy Gowns for Every Formal Occasion</p>
-              <a href="gowns.html" className="btn-cta">Learn More</a>
+              <Link to="/catalog" className="btn-cta">Learn More</Link>
             </div>
           </article>
 
@@ -34,7 +36,7 @@ function MainContent() {
             <div className="card-content">
               <h3>Jewellery</h3>
               <p>Sparkle at Every Event with Our Jewellery Collection</p>
-              <a href="jewellery.html" className="btn-cta">Learn More</a>
+              <Link to="/catalog" className="btn-cta">Learn More</Link>
             </div>
           </article>
 
@@ -43,7 +45,7 @@ function MainContent() {
             <div className="card-content">
               <h3>Bridal Lehenga</h3>
               <p>Shine on Your Special Day</p>
-              <a href="lehenga.html" className="btn-cta">Learn More</a>
+              <Link to="/catalog" className="btn-cta">Learn More</Link>
             </div>
           </article>
         </div>
@@ -71,11 +73,11 @@ function MainContent() {
         <section className="cta">
           <h2>Ready to embrace your perfect bridal look?</h2>
           <p>Let us help you choose the perfect outfit effortlessly.</p>
-          <a href="catalog.html" className="btn-cta">See All Dresses and Accessories</a>
+          <Link to="/catalog" className="btn-cta">See All Dresses and Accessories</Link>
         </section>
       </div>
     </main>
-  )
+  );
 }
 
-export default MainContent
+export default MainContent;

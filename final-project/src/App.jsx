@@ -1,19 +1,23 @@
-import './App.css'
-import Header from './components/Header'
-import MainContent from './components/MainContent'
-import Footer from './components/Footer'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import MainContent from "./components/MainContent";
+import FormPage from "./pages/FormPage";
 
 function App() {
   return (
-    <>
+    <BrowserRouter>
       <Header />
-<MainContent />
-  <Footer />
-  
-      
 
-    </>
-  )
+      <Routes>
+        <Route path="/" element={<MainContent />} />
+        <Route path="/form" element={<FormPage />} />
+        {/* Add more pages later */}
+      </Routes>
+
+      <Footer />
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
